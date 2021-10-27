@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="https://i.pinimg.com/564x/5f/59/68/5f59687e7560d90c6ea34210c5bcf830.jpg" >
+    <script src="https://kit.fontawesome.com/4d1902f986.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://assets4.lottiefiles.com/temp/lf20_fxHtqF.json">
+    <title>Valider Votre Panier</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <a href="#"><h1>Shopping.com</h1></a>
+        <form id="recherche">
+          <input  placeholder="Rechercher" type="text"> 
+           <a href="#"><button><i class="fas fa-search"></i></button></a> 
+        </form>
+        <div id="buttons">
+          <a href="#"><button type="button" class="btn btn-primary"><i class="fas fa-user"></i></button></a>
+         <a href="#"></a><button type="button" class="btn btn-primary">
+          <i class="fas fa-shopping-basket"></i> <span class="badge bg-secondary" id="conteur">0</span>
+        </button></a>
+        </div>
+      </nav>
+      <div id="promo"><h2>Réduction jusqu'a 50% </h2></div>  
+    </header>
+
+    <main>
+        <section id="commande">
+          <div id="panier">
+            <h2>Mon Panier</h2> <hr>
+            </div>
+           <div id="product" >
+            <div class="produit first">
+              <div class="partie_image">
+              <img src="https://www.frenchdisorder.com/41523/t-shirt-alex-frenchy-w.jpg" alt="image de produit">
+             </div>
+             <div class="partie_description">
+               <h4 class="prix_produit">59.900 dt </h4> 
+               <h6 class="descrip_produit">Cool T-shirt</h6>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloribus odio pariatur ab facilis temporibus </p>
+                 <div class="taille">
+                   <label >Taille</label>
+                    <select>
+                     <option value="">XS</option>
+                     <option value="">S</option>
+                     <option value="">M</option>
+                     <option value="">L</option>
+                      <option value="">XL</option>
+                    </select>
+                  </div>
+              <form >
+                <label >Quantité</label>
+                
+                <input class="add" type="button" value="+"> 
+                <input type="text" style="border: none; width: 15px;" class="qte" value="1">
+                <input class="sous"  type="button" value="-">
+                
+              </form>
+              </div>
+              <div class="partie_icon">
+                <i style="color:black" class="fas fa-heart"></i>
+                <i class="fas fa-times"></i>
+              </div>
+              <hr>
+              </div>
+              <hr>
+              <div class="produit">
+                <div class="partie_image">
+                <img src="https://api.ellequebec.com/app/uploads/2021/04/Reformation-3-768x1024.jpg" alt="image de produit">
+               </div>
+               <div class="partie_description">
+                 <h4 class="prix_produit">79.900 dt</h4>
+                 <h6 class="descrip_produit">Robe</h6>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloribus odio pariatur ab facilis temporibus </p>
+                   <div class="taille">
+                     <label >Taille</label>
+                      <select>
+                       <option value="">XS</option>
+                       <option value="">S</option>
+                       <option value="">M</option>
+                       <option value="">L</option>
+                        <option value="">XL</option>
+                      </select>
+                    </div>
+                <form >
+                  <label >Quantité</label>
+                  
+                  <input class="add"  type="button" value="+"> 
+                  <input type="text" style="border: none; width: 15px;" class="qte" value="1">
+                  <input class="sous"  type="button" value="-">
+                  
+                </form>
+                </div>
+                <div class="partie_icon">
+                  <i style="color: black" class="fas fa-heart"></i>
+                  <i class="fas fa-times"></i>
+                </div>
+                
+          </div>
+          
+          <hr>
+         
+       
+          <div id="sous-total">
+            <h3>Total</h3> 
+           <div class="dt"> <h4 id="prix_total">59.900</h4> <h4>dt</h4> </div>
+          </div>
+      
+        </section>
+
+        <section id="livraison">
+           
+              <iframe src="https://embed.lottiefiles.com/animation/5186" width="200px"></iframe>
+              <h3>Livraison Gratuite Pour Toute la Tunisie Dans 24h</h3>
+            
+        </section>
+
+
+        <section id="paiment">
+          <div id="box_pay">
+            <div id="boxx">
+            <h3 >Total</h3>
+            <div class="dt">  <h4 id="prix">0</h4> <h4>dt</h4> </div>
+            </div>
+            <hr>
+            <div id="myButton"> <a href="#"><button type="button" class="btn btn-primary btn-lg">Paiment</button></a> </div> 
+            <h5>Nous Acceptons :</h5>
+            <div id="carte_bancaire">
+              <img src="https://www.mes-finances.be/wp-content/uploads/2020/10/logo-visa-gold.png" alt="logo">
+              <img src="https://cdn.1min30.com/wp-content/uploads/2017/04/Visa-logo-1.jpg" alt="carte banquaire">
+              <img src="https://ccardgenerator.com/images/master.jpg" alt="carte banquaire">
+              <img src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/9/1/8/918702ae5a_50168582_paypal.jpg" alt="carte banquaire">
+            </div>
+            
+            <div id="redu">
+              <input onmouseup="alert('saisie welcome')" id="coupon" type="text" placeholder="Ajouter coupon" value="">
+                <a href="#" onclick="promotion()" class="btn btn-primary btn-warning"><span class="glyphicon glyphicon-gift"></span> <i class="fas fa-gift"></i> Appliquer coupon</a>
+              </div>
+              <p>Saisie : welcome</p>
+          
+             <a style="color:#004e89 ; " href="#">
+               <i class="fas fa-arrow-left"> Continuer votre achats</i></a>
+                 
+          </div>
+           
+        </section>
+    </main>
+
+
+
+    <footer>
+      <div id="info">
+        <div class="item" id="contact">
+           <h6>NOTRE SERVICE CLIENT À VOTRE ÉCOUTE</h6>
+           <br>
+           <div id="tel">
+              <h6><i class="fas fa-phone"></i>  +216 00 000 000 / +216 11 111 111</h6>
+           </div>
+           <div  id="mail">
+               <a href="mailto:wafertibi@gmail.com"> <i class="fas fa-envelope"></i>  contact@gmail.com </a>
+           </div>
+        </div>
+        <div class="item" id="information">
+          <h6>INFORMATIONS</h6>
+          
+          <a href="#">Promotions</a>
+          <a href="#">Meilleurs ventes</a>
+          <a href="#">A proprs</a>
+          <a href="#">Aide</a>
+        </div>
+        <div class="item" id="compte">
+          <h6>MON COMPTE</h6>
+          <a href="#">Mes commandes</a>
+          <a href="#">Mes avoirs</a>
+          <a href="#">Mes adresse</a>
+          <a href="#">Mes informations personnelles</a>
+          <a href="#">Mes bons de réduction</a>
+        </div>
+        <div class="item" id="suivre">
+          <h6>NOUS SUIVRE</h6>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+      <hr>
+      <div id="foot">
+        <p>TUNISIE / TUNISIA</p>
+        <div id=langues>
+          <a href="#">English | </a>
+          <a href="#">Français | </a>
+          <a href="#">عربي</a>
+        </div>
+        
+      </div>
+      <p>© 2021 ALL RIGHTS RESERVED</p>
+    </footer>
+    <script  src="main.js"></script>
+</body>
+</html>
